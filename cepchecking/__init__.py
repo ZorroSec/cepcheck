@@ -1,7 +1,7 @@
 import requests
 from colorama import Fore
 
-class CepCheck:
+class CepInfo:
     def __init__(self, cep):
         self.cep = cep
     
