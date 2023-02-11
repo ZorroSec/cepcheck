@@ -35,11 +35,17 @@ class Cep:
         self.cep = cep
     
     def check(self):
-        if len(self.cep) <= 6:
-            print(f"{Fore.LIGHTGREEN_EX}Is Valid!!")
+        r = requests.get(f"https://viacep.com.br/ws/{self.cep}/json/").json()
+        if r:
+            print(f"{Fore.LIGHTGREEN_EX}is valid{Fore.RESET}")
         else:
             print(f"{Fore.LIGHTRED_EX}Not is valid!!")
+            
     
     def formatCep(self):
         r = requests.get(f"https://viacep.com.br/ws/{self.cep}/json/").json()
         print(r['cep'])
+
+
+
+Cep("01001000").check()
