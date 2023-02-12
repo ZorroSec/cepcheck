@@ -26,5 +26,3 @@ Cep = Cep(cep)
 Cep.formatCep
 ```
 `resultado: 01001-000`
-
-#### CepCheck.cep()
