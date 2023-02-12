@@ -1,11 +1,13 @@
 # cepcheck
 
-```uma api feita em python com o intuito de substituir a requisicao de uma api de cep para o uso pessoal
+```
+uma api feita em python com o intuito de substituir a requisicao de uma api de cep para o uso pessoal
 ```
 
 ## Exemplos
 
 ### Cep.check()
+* `Cep.check()` serve simplesmemnte para ver se o cep e realmente valido.
 ```python
 from cepchecking import CepCheck
 cep = "01001000"
